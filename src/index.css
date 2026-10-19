@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    color: #282B4A;
+    background-color: #FFF3E6;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Lora', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbar for consistent sleek aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EEEBDA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A3E66;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #282B4A;
+}
+
+/* Glassmorphism helpers for cinematic view */
+.glass-panel-dark {
+  background: rgba(40, 43, 74, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(238, 235, 218, 0.15);
+}
+
+.glass-panel-cream {
+  background: rgba(255, 243, 230, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(40, 43, 74, 0.08);
+}
+
+/* Subtle dot grid pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(40, 43, 74, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-pattern-dark {
+  background-image: radial-gradient(rgba(238, 235, 218, 0.15) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
